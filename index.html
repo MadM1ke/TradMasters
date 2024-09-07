@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+      <title>TradeMasters</title>
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="stylesheet" href="css/sweetalert.min.css" />
+      <link rel="stylesheet" href="css/style.css?v20" />
+      <link rel="stylesheet" href="css/media.css?v10" />
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="header__wrapper">
+               <a href="#" class="header__logo">
+                  <p class="header__logo-desc" style="color: #6b55d4">TRADE</p>
+                  <img class="header__logo-img" src="img/logo001.svg" alt="" />
+                  <p class="header__logo-desc" style="color: #18ca8e">MASTERS</p>
+               </a>
+               <nav class="header__nav">
+                  <ul class="header__list list-reset">
+                     <img class="header__burger-logo-img" src="img/logo002.svg" style="max-width: 150px" alt="" />
+                     <p class="header__burger-logo header__logo">TradeMasters</p>
+                     <!-- <li class="header__item">
+                        <a href="#about" class="header__link">О нас</a>
+                     </li> -->
+                     <li class="header__item">
+                        <a href="#important" class="header__link">Необходимое</a>
+                     </li>
+                     <li class="header__item">
+                        <a href="#goal" class="header__link">Курс</a>
+                     </li>
+                     <li class="header__item">
+                        <a href="#steps" class="header__link">Как заработать</a>
+                     </li>
+                     <li class="header__item">
+                        <a href="#" class="header__link">Отзывы</a>
+                     </li>
+                     <!-- <li class="header__item">
+                        <a href="#contacts" class="header__link">Контакты</a>
+                     </li> -->
+                  </ul>
+                  <div class="header__burger-links">
+                     <a href="#" class="header__burger-link">
+                        <img src="img/phone-icon.svg" alt="" class="header__burger-link-icon" />
+                     </a>
+                     <a href="#" class="header__burger-link">
+                        <img src="img/tg-icon.svg" alt="" class="header__burger-link-icon" />
+                     </a>
+                     <a href="#" class="header__burger-link">
+                        <img src="img/wa-iсon.svg" alt="" class="header__burger-link-icon" />
+                     </a>
+                     <a href="#" class="header__burger-link">
+                        <img src="img/mail-icon.svg" alt="" class="header__burger-link-icon" />
+                     </a>
+                  </div>
+               </nav>
+               <button class="btn-reset burger" tabindex="-1">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="hero">
+            <div class="container">
+               <div class="hero__wrapper">
+                  <div class="hero__content">
+                     <ul class="list-reset hero__list-slider slider">
+                        <li class="hero__item-slide slide">
+                           <div class="hero__slide-content">
+                              <h1 class="section-title hero__title">
+                                 <p class="hero__title-text">Профессиональный подход к проп-трейдингу</p>
+
+                                 <p class="hero__title-desc">Обучаем внутридневному трейдингу, а именно скальпингу – одной из торговых стратегий.</p>
+                              </h1>
+                              <img src="img/hero001.svg" alt="Hero-Img" class="hero__img" />
+                           </div>
+                        </li>
+                        <li class="hero__item-slide slide">
+                           <div class="hero__slide-content">
+                              <h2 class="section-title hero__title">
+                                 <p class="hero__title-text">Курс внутридневного трейдинга (скальпинга)</p>
+                                 <p class="hero__title-desc">Предоставляем капитал в управление и обучаем разработке торговых стратегий</p>
+                              </h2>
+                              <img src="img/hero002.svg" alt="Hero-Img" class="hero__img" />
+                           </div>
+                        </li>
+                        <li class="hero__item-slide slide">
+                           <div class="hero__slide-content">
+                              <h2 class="section-title hero__title">
+                                 <p class="hero__title-text">Профессиональный трейдинг</p>
+                                 <p class="hero__title-desc">
+                                    Специализируемся на биржевой торговле акциями, фьючерсами и валютой на площадке Московской Биржи ММВБ-РТС.
+                                 </p>
+                              </h2>
+                              <img src="img/hero003.svg" alt="Hero-Img" class="hero__img" />
+                           </div>
+                        </li>
+                     </ul>
+
+                     <div class="pagination pagination-hero">
+                        <span class="pagination__btn pagination__btn-prev" id="hero-btn-prev"
+                           ><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" transform="matrix(-1 0 0 1 40 0)" fill="white"></rect>
+                              <path
+                                 d="M14.6666 19.9999L25.3333 19.9999"
+                                 stroke="#6b55d4"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              ></path>
+                              <path
+                                 d="M17.9997 23.3334C17.9997 23.3334 14.6664 20.8784 14.6664 20C14.6664 19.1216 17.9998 16.6667 17.9998 16.6667"
+                                 stroke="#6b55d4"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              ></path>
+                           </svg>
+                        </span>
+                        <span class="pagination__btn pagination__btn-next" id="hero-btn-next"
+                           ><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="white"></rect>
+                              <path
+                                 d="M25.3334 19.9999L14.6667 19.9999"
+                                 stroke="#6b55d4"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              ></path>
+                              <path
+                                 d="M22.0003 23.3334C22.0003 23.3334 25.3336 20.8784 25.3336 20C25.3336 19.1216 22.0002 16.6667 22.0002 16.6667"
+                                 stroke="#6b55d4"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              ></path>
+                           </svg>
+                        </span>
+                     </div>
+                     <div class="hero__links">
+                        <a href="#feedbackForm" class="hero__link">Подробнее</a>
+                        <a href="#feedbackForm" class="hero__link">Купить курс</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="marquee">
+            <div class="marquee__wrapper">
+               <div class="slider customer-logos marquee__slider">
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img marquee__slide-gaz" src="img/marquee/gazprom-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/yandex-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/sber-logo.svg" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/magnit-logo.jpeg" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/rostelecom-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/aeroflot-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/tbank-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/whoosh-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/mb-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/rosneft-logo.jpeg" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img marquee__slide-beluga" src="img/marquee/beluga-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/seversteel.jpeg" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/vtb-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/pic-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/nordnik-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img" src="img/marquee/ozon-logo.png" alt="" />
+                  </div>
+                  <div class="slide marquee__slide">
+                     <img class="marquee__slide-img marquee__slide-mts" src="img/marquee/mts-logo.jpeg" alt="" />
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="important section-offset" id="important">
+            <div class="container">
+               <div class="important__wrapper">
+                  <h2 class="important__title section-title">Что необходимо трейдеру для успешной торговли в 2024 году?</h2>
+                  <ul class="list-reset important__list">
+                     <li class="important__item">
+                        <h3 class="important__sub-title">Эффективная Торговая Стратегия</h3>
+                        <div class="important__text">
+                           <p class="important__sub-text">Наличие четкой и обоснованной торговой стратегии — ключ к успеху.</p>
+                        </div>
+                     </li>
+                     <li class="important__item">
+                        <h3 class="important__sub-title">Информация о рынке</h3>
+                        <div class="important__text">
+                           <p class="important__sub-text">Доступ к актуальным новостям и экономическим индикаторам, которые могут повлиять на рынок.</p>
+                        </div>
+                     </li>
+                     <li class="important__item">
+                        <h3 class="important__sub-title">Психология</h3>
+                        <div class="important__text">
+                           <p class="important__sub-text">
+                              Развитие эмоциональной устойчивости и дисциплины для быстрого принятия решений в стрессовых ситуациях.
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="important__info">
+                     <p class="important__desc">
+                        Эти элементы в совокупности помогают трейдерам принимать более обоснованные решения и повышают шансы на успешную торговлю.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="goal section-offset" id="goal">
+            <div class="goal-bg">
+               <div class="container">
+                  <div class="goal__wrapper">
+                     <h2 class="section-title goal__title">Курс по трейдингу от TradeMasters</h2>
+                     <div class="goal__content">
+                        <ul class="list-reset goal__list">
+                           <li class="goal__item">
+                              <span class="goal__numb">1</span>
+                              <p class="goal__desc">
+                                 Наш курс — это обучающие материалы и программы, которые помогают Вам научиться торговать на финансовых рынках.
+                              </p>
+                           </li>
+
+                           <li class="goal__item">
+                              <span class="goal__numb">2</span>
+                              <p class="goal__desc">
+                                 В ходе обучения Вы получают знания о том, как анализировать рынок, выбирать активы для торговли и управлять рисками.
+                              </p>
+                           </li>
+                           <li class="goal__item">
+                              <span class="goal__numb">3</span>
+                              <p class="goal__desc">
+                                 Курс будет полезен как новичкам, так и опытным трейдерам, которые хотят улучшить свои навыки и увеличить доходность своих
+                                 инвестиций.
+                              </p>
+                           </li>
+                        </ul>
+                        <img src="img/goal001.svg" alt="" class="goal__content-img" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="steps section-offset" id="steps">
+            <div class="steps__bg">
+               <div class="container">
+                  <div class="steps__wrapper">
+                     <h2 class="section-title steps__title">Как стать трейдером <span>TradeMasters</span>?</h2>
+                     <ul class="list-reset steps__list">
+                        <li class="steps__item">
+                           <h3 class="steps__sub-title">Оставить заявку</h3>
+                           <img class="steps__img" src="img/steps001.svg" alt="" />
+                           <div class="steps__item-info">
+                              <!-- <h3 class="steps__item-info-sub-title">Оставить заявку</h3> -->
+                              <p class="step__info-desc">Менеджер свяжется с Вами для обсуждения условий и деталей обучения.</p>
+                           </div>
+                        </li>
+                        <li class="steps__item">
+                           <h3 class="steps__sub-title">Пройти курс</h3>
+                           <img class="steps__img" src="img/steps002.svg" alt="" />
+                           <div class="steps__item-info">
+                              <!-- <h3 class="steps__item-info-sub-title">Пройти курс</h3> -->
+                              <p class="step__info-desc">Начать осваивать все тонкости и нюансы торговли на Московской бирже.</p>
+                           </div>
+                        </li>
+                        <li class="steps__item steps__item">
+                           <h3 class="steps__sub-title">Начать торговлю</h3>
+                           <img class="steps__img" src="img/steps003.svg" alt="" />
+                           <div class="steps__item-info">
+                              <!-- <h3 class="steps__item-info-sub-title">Начать торговлю</h3> -->
+                              <p class="step__info-desc">Использовать полученные навыки на практике и развиваться каждый день.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="questions section-offset">
+            <div class="container">
+               <div class="questions__wrapper">
+                  <h2 class="questions__title section-title">Часто задаваемые вопросы</h2>
+                  <div class="questions__content">
+                     <div class="faq__content">
+                        <ul class="list-reset faq__list accordion">
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Почему стоит выбрать именно проп-трейдинговую компанию и в чем ее преимущество?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">
+                                    Проп-трейдинговая компания использует собственные средства для торговли, а не клиентские средства, что позволяет ей иметь
+                                    большую гибкость и независимость от внешних инвесторов.
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Сколько денег я должен вложить чтобы начать торговать?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">Мы предоставляем начальный капитал. Никаких вложений с вашей стороны не требуется.</p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Сколько я буду зарабатывать?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">
+                                    Трейдинг и, в частности, скальпинг – это прибыльное дело. Но именно для тех, кто наработал свой опыт на ошибках. Заработок
+                                    трейдера может существенно различаться в зависимости от его опыта, навыков, стратегии торговли, используемых финансовых
+                                    инструментов и текущей рыночной ситуации. Некоторые трейдеры могут зарабатывать значительные суммы, в то время как другие
+                                    могут иметь более скромный доход.
+                                 </p>
+                                 <p class="faq__desc">
+                                    Торговля на финансовых рынках связана с рисками, и потенциальная прибыль всегда сопряжена с возможными убытками. Каких-либо
+                                    гарантий заработка в трейдинге нет и не может быть.
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Когда я смогу начать зарабатывать с трейдинга?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">
+                                    То, насколько быстро Вы начнете зарабатывать зависит лишь от Вас, вашего желания, стремления и упорства. В среднем, первые
+                                    положительные результаты появляются спустя 3-4 месяца после начала обучения, а если говорить о более стабильном заработке с
+                                    биржи, то его можно получить через 9-12 месяцев.
+                                 </p>
+                                 <p class="faq__desc">Осознанный и более стабильный трейдинг начинается от года.</p>
+                                 <p class="faq__desc">
+                                    Однако при любом раскладе в данном вопросе все индивидуально у каждого, кто приходит за заработком с биржи.
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Считается ли трейдер вашим сотрудником?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">
+                                    Трейдер не является нашим сотрудником, потому как отношения между трейдером и нами регламентируются гражданско-правовым, а
+                                    не трудовым договором. Трейдер вправе сам определять распорядок дня, свои выходные дни и тд.
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Кто несет ответственность за понесенные трейдером убытки из-за зависаний или глюков ПО?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">Наша работа базируется на принципе, согласно которому все риски трейдер берет на себя.</p>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Каковы плюсы и минусы трейдинга?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <ul class="faq__list-plus">
+                                    <h4 class="faq__sub-title-plus">Плюсы трейдинга:</h4>
+                                    <li class="faq__item-plus"><p class="faq__desc">Можно работать откуда угодно;</p></li>
+                                    <li class="faq__item-plus"><p class="faq__desc">У вас нет начальников;</p></li>
+                                    <li class="faq__item-plus">
+                                       <p class="faq__desc">Получаете стабильный доход при четко отработанной торговой стратегии;</p>
+                                    </li>
+                                    <li class="faq__item-plus"><p class="faq__desc">Не имеете ограничений по заработку.</p></li>
+                                 </ul>
+                                 <ul class="faq__list-minus">
+                                    <h4 class="faq__sub-title-minus">Минусы трейдинга:</h4>
+                                    <li class="faq__item-minus">
+                                       <p class="faq__desc">Трейдинг — это стрессовая и достаточно нервная работа;</p>
+                                    </li>
+                                    <li class="faq__item-minus">
+                                       <p class="faq__desc">Трейдинг требует постоянного совершенствования навыков, иначе вы не будете понимать рынок;</p>
+                                    </li>
+                                    <li class="faq__item-minus">
+                                       <p class="faq__desc">
+                                          Трейдинг — это риск. Никто и никогда не даёт гарантий, куда пойдёт рынок и как отработать ту или иную ситуацию.
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="faq__item">
+                              <h4 class="faq__sub-title">
+                                 <p class="faq__sb-text">Что будет если я «солью» свой первый депозит, предоставленный Компанией?</p>
+                                 <div class="faq__icon">
+                                    <span class="faq__icon-line"></span>
+                                    <span class="faq__icon-line"></span>
+                                 </div>
+                              </h4>
+                              <div class="faq__wrapper">
+                                 <p class="faq__desc">В данном случае никаких финансовых претензий с нашей стороны Вам предъявлено не будет.</p>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="feedback" id="feedbackForm">
+            <div class="container">
+               <div class="feedback__wrapper">
+                  <h2 class="feedback__title section-title">Связаться с нами</h2>
+                  <div class="feedback__content">
+                     <form class="feedback__form">
+                        <div class="feedback__form-wrapper">
+                           <div class="feedback__form-section">
+                              <label class="feedback__section-label" for="name">ФИО</label>
+                              <input class="feedback__section-input" name="name" type="text" required placeholder="*обязательно" />
+                           </div>
+                           <div class="feedback__form-section">
+                              <label class="feedback__section-label" for="email">E-mail</label>
+                              <input class="feedback__section-input" name="email" type="email" required placeholder="*обязательно" />
+                           </div>
+                           <div class="feedback__form-section">
+                              <label class="feedback__section-label" for="phone">Номер телефона</label>
+                              <input class="feedback__section-input" name="phone" type="tel" placeholder="*обязательно" required />
+                           </div>
+                           <div class="feedback__form-section">
+                              <label class="feedback__section-label" for="telegram">Ссылка на Telegram</label>
+                              <input class="feedback__section-input" name="telegram" type="text" required placeholder="*обязательно" />
+                           </div>
+                        </div>
+                        <button class="btn-reset feedback__btn" type="submit">Отправить</button>
+                     </form>
+                     <img class="feedback__graff" src="img/feedback001.svg" alt="" />
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="foote__top">
+                  <a href="#" class="footer__logo">
+                     <p class="footer__logo-desc">TRADE</p>
+                     <img class="footer__logo-img" src="img/logo002.svg" style="max-width: 100px" alt="" />
+                     <p class="footer__logo-desc">MASTERS</p>
+                  </a>
+                  <div class="footer__content">
+                     <nav class="footer__nav">
+                        <ul class="list-reset footer__list">
+                           <li class="footer__item">
+                              <a href="#" class="footer__link">Необходимое</a>
+                           </li>
+                           <li class="footer__item">
+                              <a href="#" class="footer__link">Курс</a>
+                           </li>
+                           <li class="footer__item">
+                              <a href="#" class="footer__link">Как заработать</a>
+                           </li>
+                           <li class="footer__item">
+                              <a href="#" class="footer__link">Отзывы</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="footer__info" id="contacts">
+                        <p class="footer__desc">г.Пятигорск</p>
+                        <p class="footer__desc">Региональный деловой центр</p>
+                        <a href="https://yandex.ru/maps/-/CDvljCld" class="footer__desc footer__desc-link">ул. Крайнего 49,офис 513</a>
+                        <p class="footer__desc">Пн-Пт – 10:00-19:00</p>
+                        <p class="footer__desc">Сб-Вс – Выходной</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__all">
+                  <a href="#" class="footer__offer">Ознакомиться с офертой</a>
+                  <small class="footer__small">©2024 TradeMasters</small>
+                  <div class="footer__links">
+                     <a href="#" class="footer__link">
+                        <img src="img/phone-icon.svg" alt="" class="footer__link-icon" />
+                     </a>
+                     <a href="#" class="footer__link">
+                        <img src="img/tg-icon.svg" alt="" class="footer__link-icon" />
+                     </a>
+                     <a href="#" class="footer__link">
+                        <img src="img/wa-iсon.svg" alt="" class="footer__link-icon" />
+                     </a>
+                     <a href="#" class="footer__link">
+                        <img src="img/mail-icon.svg" alt="" class="footer__link-icon" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+      <script src="js/sweetalert.min.js"></script>
+      <script src="js/script.js?=v2o"></script>
+   </body>
+</html>
